@@ -1,0 +1,27 @@
+.img-1 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.grid {
+    display: flex;
+}
+
+.container {
+    width: 930px;
+}
+
+.img-2 {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.nav-link i {
+    color: gray; 
+}
+.nav-link.active i {
+    color: blue;
+    background-color: #e9ecef;
+}

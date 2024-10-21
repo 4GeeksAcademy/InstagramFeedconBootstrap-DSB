@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container p-0">
+        <nav class="navbar bg-body-tertiary bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+                </a>
+                <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                    <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#new-post">Create a new post</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        
+        <!--Tab-Grids-->
+        <div class="container-fluid mt-4 d-grid gap-4 d-md-flex justify-content-md-center">
+            <ul class="nav" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="complex-tab" data-bs-toggle="tab" href="#complex" role="tab" aria-controls="complex" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="simple-tab" data-bs-toggle="tab" href="#simple" role="tab" aria-controls="simple" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!--Tab-content - complex columns-->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="complex" role="tabpanel" aria-labelledby="complex-tab">
+                <div class="complex-img grid gap-0 row-gap-3 justify-content-md-center">
+                    <div class="p-1 g-col-4">
+                        <img src="https://img.menzig.fit/a/1000/1164-h1.jpg" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://avesexoticas.org/wp-content/uploads/2017/06/shutterstock_141263962-600x600.jpg" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_02777dd293554fa6885fc535dbca7a5c.webp" class="img-1">
+                    </div>
+                </div>
+                <div class="grid gap-0 row-gap-3 justify-content-md-center">
+                    <div class="p-1 g-col-4">
+                        <img src="https://images.photowall.com/products/45548/surfing.jpg?h=699&q=85" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://wanderhealthy.com/wp-content/uploads/2023/05/Is-traveling-a-hobby-4-768x512.jpg" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/que-visitar-en-menorca-1.jpg" class="img-1">
+                    </div>
+                </div>
+                <div class="grid gap-0 row-gap-3 justify-content-md-center">
+                    <div class="p-1 g-col-4">
+                        <img src="https://openwater.es/wp-content/uploads/2019/06/botella-de-buceo.png" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://borrat.com/wp-content/uploads/2021/11/barco-sasga-menorquin-42-ht-09.jpg" class="img-1">
+                    </div>
+                    <div class="p-1 g-col-4">
+                        <img src="https://www.vallparc.com/wp-content/uploads/2023/04/3.jpg" class="img-1">
+                    </div>
+                </div>
+            </div>
+        
+            <!--Tab-content - simple column-->
+            
+            <div class="tab-pane fade" id="simple" role="tabpanel" aria-labelledby="simple-tab">
+                <div class="simple-img container m-0 p-0">
+                    <div class="grid gap-0 row-gap-3 justify-content-md-center">
+                        <div class="p-0 g-col-1">
+                            <img src="https://img.menzig.fit/a/1000/1164-h1.jpg" class="img-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Modal-->
+    <div class="modal fade" id="new-post" tabindex="-1" aria-labelledby="newPostLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="newPostLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold">Caption:</p>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="floatingTextarea"></textarea>
+                        <label class="text-secondary" for="floatingTextarea">Add the caption of your post here</label>
+                    </div>
+                    <div class="btns-photo-location mt-3">
+                        <button type="button" class="btn btn-light border me-2"><i class="fa-solid fa-camera"></i></button>
+                        <button type="button" class="btn btn-light border me-2"><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
