@@ -1,7 +1,22 @@
+
+
 .img-1 {
     width: 300px;
     height: 300px;
     object-fit: cover;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    transition: transform 0.3s ease; /* Transición suave */
+    width: 300px;
+}
+
+.img-container img:hover {
+        transform: scale(1.1);
 }
 
 .grid {
@@ -13,15 +28,29 @@
 }
 
 .img-2 {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .nav-link i {
     color: gray; 
 }
+
 .nav-link.active i {
     color: blue;
     background-color: #e9ecef;
+}
+
+.header-post {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 500px;
+    background: white;
+}
+
+.font-post {
+    font-family: "Nunito", sans-serif;
+    text-align: justify;
 }
